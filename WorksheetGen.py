@@ -113,7 +113,7 @@ class LongDivision(BaseProblem):
         space = ' ' * (len(sdiv) + 2)  # For ' )'
         line = '_' * len(sdivd)
         header_line = space + line
-        div_line = sdiv + ' )' + sdivd
+        div_line = sdiv + ' /' + sdivd
         return header_line + '\n' + div_line + '\n'
 
 # List of problem types for extensibility
@@ -243,3 +243,4 @@ preview_text = tk.Text(root, height=30, width=80, font=("Courier", FONT_SIZE))
 preview_text.pack(side="bottom", fill="both", expand=True)
 
 root.mainloop()
+
